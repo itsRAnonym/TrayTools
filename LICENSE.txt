@@ -1,0 +1,28 @@
+TrayTools (BatteryTray, NetSpeedTray) - End User License Agreement
+
+Copyright (c) 2026 NAMA_KAMU. All rights reserved.
+
+1. Grant. You may download, install and use the unmodified binaries published
+   on this repository's Releases page, for personal or commercial purposes,
+   free of charge.
+
+2. Restrictions. Except where applicable law does not allow these restrictions,
+   you may not: (a) modify, adapt or create derivative works of the software;
+   (b) decompile, disassemble or otherwise attempt to derive the source code;
+   (c) redistribute, sell, rent or sublicense the software or any part of it
+   (link to the Releases page instead).
+
+3. Ownership. The software is licensed, not sold. All rights not expressly
+   granted are reserved by the copyright holder. The source code is not
+   published and is not licensed under this agreement.
+
+4. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR
+   A PARTICULAR PURPOSE AND NONINFRINGEMENT. BATTERY AND TIME ESTIMATES ARE
+   APPROXIMATIONS AND MUST NOT BE RELIED ON FOR SAFETY-CRITICAL USE.
+
+5. Limitation of liability. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR
+   ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+6. Third-party components are covered by their own licenses; see
+   THIRD-PARTY-NOTICES.txt.
