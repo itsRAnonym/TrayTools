@@ -1,6 +1,6 @@
 TrayTools (BatteryTray, NetSpeedTray) - End User License Agreement
 
-Copyright (c) 2026 NAMA_KAMU. All rights reserved.
+Copyright (c) 2026 Rahman Ridha Arawi. All rights reserved.
 
 1. Grant. You may download, install and use the unmodified binaries published
    on this repository's Releases page, for personal or commercial purposes,
