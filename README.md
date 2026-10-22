@@ -13,7 +13,7 @@ Ikon tray menampilkan **persen baterai laptop**. Klik kiri untuk membuka panel d
 
 - Persen, status (memakai baterai / mengisi / tercolok), dan **estimasi sisa waktu** yang dihitung dari daya yang sedang terpakai (W), bukan sekadar tebakan persen.
 - Kapasitas baterai (Wh) dan **kesehatan baterai**, plus **tren kesehatan** dari catatan harian.
-- **Daftar perangkat terhubung** (Bluetooth dan gamepad Xbox) beserta level baterainya dan estimasi waktu habis. Daftar ikut menyegarkan diri saat perangkat tersambung atau terputus.
+- **Daftar perangkat terhubung** (Bluetooth dan gamepad Xbox) beserta level baterainya dan estimasi waktu habis. List perangkat akan memuat ulang saat perangkat tersambung atau terputus.
 - **Pengingat cabut charger**: notifikasi saat baterai 100%, lalu diingatkan lagi kalau masih tercolok setelah waktu yang kamu atur.
 - Notifikasi saat baterai perangkat rendah.
 - Panel menutup otomatis (waktunya bisa diatur) dan tidak memakai polling untuk baterai laptop, jadi ringan.
@@ -28,7 +28,7 @@ Ambil dari halaman **[Releases](../../releases/latest)**. Ada dua varian per apl
 
 | File | Keterangan |
 |---|---|
-| `NamaApp-x.y.z-win-x64.zip` | Ringan. Butuh **.NET 8 Desktop Runtime** ([unduh dari Microsoft](https://dotnet.microsoft.com/download/dotnet/8.0)). |
+| `NamaApp-x.y.z-win-x64.zip` | Ringan. Butuh **.NET 8 Desktop Runtime** terinstall ([unduh dari Microsoft](https://dotnet.microsoft.com/download/dotnet/8.0)). |
 | `NamaApp-x.y.z-win-x64-standalone.zip` | Mandiri, .NET sudah di dalamnya. Ukuran lebih besar, tidak perlu pasang apa-apa. |
 
 `SHA256SUMS.txt` berisi checksum untuk memastikan file yang kamu unduh tidak berubah.
