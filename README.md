@@ -6,7 +6,7 @@ Dua aplikasi kecil buat system tray Windows 11: **BatteryTray** sama **NetSpeedT
 
 Repo ini cuma buat distribusi. Isinya README ini, tab **Releases** (tempat file download-nya), **Issues** buat lapor bug atau request fitur, sama LICENSE. Source code-nya gak gw publish (closed source), jadi jangan heran kalau gak ada folder kode di sini. Kalau lu cuma mau pake aplikasinya, langsung aja ke [Releases](../../releases/latest).
 
-## Update terbaru (v0.4.0)
+## Update terbaru (v2.0.0)
 
 <!-- Ganti bagian ini tiap rilis baru. Detail lengkapnya tetep ada di halaman Releases. -->
 
