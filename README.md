@@ -6,44 +6,46 @@ Dua aplikasi kecil buat system tray Windows 11: **BatteryTray** sama **NetSpeedT
 
 Repo ini cuma buat distribusi. Isinya README ini, tab **Releases** (tempat file download-nya), **Issues** buat lapor bug atau request fitur, sama LICENSE. Source code-nya gak gw publish (closed source), jadi jangan heran kalau gak ada folder kode di sini. Kalau lu cuma mau pake aplikasinya, langsung aja ke [Releases](../../releases/latest).
 
-## Update terbaru (v2.0.0)
+## TrayTools v2.1.0
 
-<!-- Ganti bagian ini tiap rilis baru. Detail lengkapnya tetep ada di halaman Releases. -->
+Update lumayan gede kali ini, plus ada satu app baru. Banyak fitur baru, dan estimasi waktu habis buat device Bluetooth gw hitung ulang biar lebih akurat.
 
-- BatteryTray punya tab **Kontrol** baru: battery saver, mode daya, power plan, sama kecerahan layar yang diinget terpisah buat pas dicolok dan pas pake baterai.
-- Estimasi waktu habis buat device Bluetooth dihitung ulang biar lebih akurat, plus ada toggle buat nyembunyiin.
-- NetSpeedTray sekarang ikonnya angka doang, dan ada riwayat pemakaian data (harian, bulanan, total) yang direset tiap jam 12 malam.
+### BatteryTray
 
-Catatan lengkap per versi ada di Releases.
-
-<!-- Taruh screenshot di folder docs/ terus aktifin baris ini:
-![BatteryTray](docs/batterytray.png) ![NetSpeedTray](docs/netspeedtray.png)
--->
-
-## BatteryTray
-
-Ikon tray-nya nampilin persen baterai laptop. Klik kiri buat buka panel, isinya dua tab.
-
-**Tab Baterai**
-
-- Persen, status (lagi dipake / ngecas / tercolok), plus estimasi sisa waktu. Estimasinya dihitung dari daya yang lagi kepake (watt), bukan nebak dari persen doang.
-- Kapasitas baterai (Wh), battery health, sama tren health-nya dari catatan harian. Trennya baru muncul setelah ada data kurang lebih seminggu.
-- List device yang konek (Bluetooth sama gamepad Xbox) beserta level baterainya. List-nya auto refresh pas device konek atau putus. Ada toggle **Estimasi** buat nampilin atau ngumpetin perkiraan waktu habis tiap device.
-- Pengingat cabut charger. Ada notif pas baterai nyampe 100%, terus diingetin lagi kalau masih nancep setelah waktu yang lu atur (default 30 menit).
+- Tab **Kontrol** baru di popup: battery saver, mode daya (Hemat daya / Seimbang / Performa), ganti power plan, sama kecerahan layar (25/50/75/100% plus slider). Kecerahannya diinget terpisah buat pas dicolok dan pas pake baterai, terus otomatis dipake waktu charger dicolok atau dicabut.
+- Estimasi waktu habis buat device Bluetooth dihitung ulang. Sekarang pake momen level turun yang beneran kejadian, bukan tebakan. Tetep kasar buat device yang ngelapor per 10%, dan baru muncul setelah level turun dua kali.
+- Toggle **Estimasi** di list device, kalau lu gak mau liat perkiraannya.
+- List device auto refresh pas ada yang konek atau putus.
+- Pengingat cabut charger: notif pas 100%, terus diingetin lagi kalau masih nancep setelah waktu yang lu atur.
 - Notif kalau baterai device mau abis.
+- Riwayat battery health plus trennya.
+- Popup nutup sendiri (waktunya bisa diatur), selalu balik ke tab Baterai tiap dibuka, dan udah gak kedip pas refresh.
 
-**Tab Kontrol**
+### NetSpeedTray
 
-- Battery saver on/off, mode daya (Hemat daya / Seimbang / Performa), sama ganti power plan.
-- Kecerahan layar laptop: tombol 25/50/75/100% plus slider. Kecerahannya diinget terpisah buat pas dicolok dan pas pake baterai, jadi otomatis ganti sendiri waktu charger dicolok atau dicabut.
+- Ikon sekarang angka doang (MB/s), biar kebaca di ukuran tray yang kecil. Biru download, oranye upload.
+- Riwayat pemakaian data: hari ini, kemarin, bulan ini, total, 7 hari terakhir, sama 3 bulan terakhir. Klik kiri ikon buat buka.
+- Hitungan harian direset tiap jam 12 malam.
+- Riwayat bisa diexport ke CSV atau dihapus dari menu klik kanan.
 
-Popup-nya nutup sendiri (waktunya bisa diatur) dan selalu balik ke tab Baterai tiap dibuka lagi. Buat baterai laptop gak ada polling, jadi ringan.
+### LockKeysTray (app baru)
 
-## NetSpeedTray
+- Overlay sebentar tiap pencet Caps Lock atau Num Lock (opsional Scroll Lock), nunjukin ON atau OFF. Gak ngambil fokus, tembus klik.
+- Ikon tray nunjukin status sekarang (A buat Caps, 1 buat Num).
+- Bisa diatur: tombol yang dipantau, tampil pas OFF atau enggak, durasi, posisi, ukuran.
+- Gak ada polling, jadi ringan.
 
-Dua ikon tray yang nampilin kecepatan download sama upload secara realtime. Isinya angka doang dalam MB/s, biru buat download, oranye buat upload. Hover buat liat kecepatan lengkap plus pemakaian hari ini.
+### Semua app
 
-Klik kiri buat buka riwayat pemakaian data: hari ini, kemarin, bulan ini, total, 7 hari terakhir, sama 3 bulan terakhir. Hitungan hariannya direset tiap jam 12 malam, dan semua riwayat bisa diexport ke CSV. Klik kanan buat pilih adapter, interval update, sama nampilin atau ngumpetin ikon upload.
+- Menu baru **Tentang dan update...** di klik kanan: versi, author, link GitHub, link donasi, sama tombol **Cek update**.
+- Cek update ngecek rilis terbaru di GitHub dan buka halaman download. Ada opsi cek otomatis (maksimal sekali sehari), default-nya mati.
+
+### Catatan
+
+- Windows 11 itu target utama. Windows 10 (1607+) harusnya jalan, tapi belum semua fitur dites di sana. Windows 7/8/8.1 gak didukung karena .NET 8.
+
+- Kontrol daya dan kecerahan pake API Windows yang sebagian gak resmi, jadi hasilnya bisa beda antar laptop. Kalau ada yang gak jalan, kabarin lewat Issues, sebut laptop lu apa.
+- App belum di-sign, jadi SmartScreen mungkin muncul. Cek SHA-256 pake `SHA256SUMS.txt` kalau mau mastiin.
 
 ## Download
 
